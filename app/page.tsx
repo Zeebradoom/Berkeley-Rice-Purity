@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 
 const questions = [
   "1. Turned in an assignment minutes before the deadline?",
@@ -18,7 +19,7 @@ const questions = [
   "13. Lost your Cal ID more than once and had to replace it?",
   "14. Heard a professor roast Stanford during a lecture?",
   "15. Rubbed the 4.0 Ball before finals?",
-  "16. Sat on the 4.0 Hill hoping for good grades?",
+  "16. Sat on the 4.0 Hill before finals?",
   "17. Been to a concert at the Greek Theater?",
   "18. Finished a class without going to any lectures?",
   "19. Dropped a class after the first lecture?",
@@ -31,18 +32,18 @@ const questions = [
   "26. Argued with a GSI over partial credit on a test?",
   "27. Took a class Pass/No Pass to avoid hurting your GPA?",
   "28. Did a coffee chat at Strada?",
-  "29. Participated in a protest or rally on Sproul Plaza?",
+  "29. Participated in a protest or rally on Sproul?",
   "30. Googled \"how to drop out of college\" after a midterm?",
   "31. Had a lab partner crush and flirted during experiments?",
   "32. Tried every boba place on Telegraph and ranked them?",
-  "33. Waited an hour in line for a club's boba fundraiser?",
+  "33. Waited in line for a club's boba fundraiser?",
   "34. Found a random bike wheel locked up without the bike?",
   "35. Played chess at the Chess Club tables on Telegraph?",
   "36. Went to the Berkeley Botanical Garden for date vibes?",
   "37. Went on a date at Cheeseboard Pizza or Berkeley Marina?",
   "38. Saw a deer northside?",
-  "39. Hit by an electric skateboard, scooter, or bike?",
-  "40. Ridden an electric skateboard or scooter?",
+  "39. Ridden an electric skateboard or scooter?",
+  "40. Hit by an electric skateboard, scooter, or bike?",
   "41. Been harassed by a homeless person?",
   "42. Got locked out of your dorm or apartment in pajamas?",
   "43. Enrolled in a class just for the grade curve?",
@@ -72,7 +73,7 @@ const questions = [
   "67. Ran from a noise complaint before UCPD showed up?",
   "68. Got rejected from a frat party because it was \"brothers-only\"?",
   "69. Pregamed at a frat house on Channing or Piedmont?",
-  "70. Befriended someone just to use them for homeworks?",
+  "70. Befriended someone just to use them for homework solutions?",
   "71. Used Chegg, CourseHero, or Slader to finish homework?",
   "72. Missed a midterm or final due to oversleeping or forgetting?",
   "73. Accidentally joined a graduate-level seminar and didn't realize until halfway?",
@@ -84,10 +85,10 @@ const questions = [
   "79. Had a study buddy turn into a romantic partner?",
   "80. Got into an argument over politics on the first date?",
   "81. Touched the Stanford Axe?",
-  "82. Got caught cheating and played innocent?",
+  "82. Got caught using AI to cheat and played innocent?",
   "83. Walked home barefoot or lost your shoes after a party?",
   "84. Sneaked out a Tupperware full of food from a Dining Hall?",
-  "85. Stolen food from a dining hall?",
+  "85. Had sex during a Zoom class?",
   "86. Took someone else's DoorDash/GrubHub order from the lobby?",
   "87. Dated someone purely because they were in a tech consulting club?",
   "88. Got recruited for a startup idea during a tabling event?",
@@ -163,6 +164,7 @@ export default function Home() {
                     className="w-5 h-5"
                   />
                   <label htmlFor={`question-${index}`} className="text-xl font-medium">
+                    <Analytics />
                     {question}
                   </label>
                 </div>
