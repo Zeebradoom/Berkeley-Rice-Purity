@@ -95,7 +95,7 @@ const questions = [
   "89. Ghosted someone you met in a DeCal?",
   "90. Broke something valuable at a frat party and ran?",
   "91. Participated in the naked run?",
-  "92. Committed an act of vandalism on university property?",
+  "92. Snuck onto the football field on a non game day?",
   "93. Explored the Steam Tunnels?",
   "94. Shotgunned a beer at the Campanile?",
   "95. Hooked up with someone in a co-op or dorm lounge?",
