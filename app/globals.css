@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #faebc3; /* Light yellow background */
+  --foreground: #171717;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  background-image: 
+    url('/oski.png'),
+    url('/campanile.png'),
+    url('/berkeley-seal.png');
+  background-repeat: no-repeat;
+  background-position: 
+    right top,
+    left center,
+    right bottom;
+  background-size: 200px;
+  background-attachment: fixed;
+}
+
+input[type="checkbox"] {
+  accent-color: #003262; /* Berkeley Blue */
+}
